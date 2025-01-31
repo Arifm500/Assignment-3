@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#FFDC26',
+              },
+            },
+          },
+        }
+      </script>
+    <title>Assignment-3</title>
+</head>
+<body>
+    <header>
+        <!-- nav style -->
+        <nav>
+            <div class="navbar bg-[#FFF9F4]">
+                <!-- nav start -->
+                <div class="navbar-start">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                      <img src="c1-assets/logo-header.png" alt="">
+                    </div>
+                    <div class="hidden lg:block">
+                        <h3 class="text-2xl font-normal">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+                    </div>
+                </div>
+                <!-- nav center -->
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li><a href="">Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <!-- nav end -->
+                <div class="navbar-end">
+                    <!-- bell icon -->
+                     <div class="md:flex items-center hidden md:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                          </svg>
+                          <!-- search icon -->
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>
+                          <button class="btn btn-outline btn-warning">Login</button>
+                          <button class="btn btn-warning">Warning</button>
+                     </div>
+                  
+                      <!-- menu bar icon -->
+                      <div class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                          
+                      </div>
+                </div>
+              </div>
+        </nav>
+        <!-- banner style -->
+         <div>
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img
+                    src="c1-assets/cat-big.png"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                    <h1 class="text-5xl font-bold">Pamper Your Pet <br> Because They Deserve <br> the Bes</h1>
+                    <p class="py-6">
+                        Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!
+                    </p>
+                    <button class="btn btn-primary">Find a pet</button>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
