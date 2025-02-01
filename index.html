@@ -18,6 +18,16 @@
         }
       </script>
     <title>Assignment-3</title>
+    <style>
+      @keyframes move {
+          0% { transform: translateX(0); }
+          50% { transform: translateX(50px); }
+          100% { transform: translateX(0); }
+      }
+      .move {
+          animation: move 3s infinite ease-in-out;
+      }
+  </style>
 </head>
 <body>
     <header class="md:mx-36">
@@ -76,7 +86,7 @@
           <button class="btn btn-primary bg-[#FFDC26] text-black border-none">Find a pet</button>
           </div>
           <!-- banner image -->
-          <div class="">
+          <div class="move">
             <img src="c1-assets/cat-big.png" alt="">
           </div>
         </div>
@@ -197,7 +207,7 @@
              </div>
             </div>
             <!-- div 2 -->
-            <div class="flex items-center justify-center hidden sm:block gap-4">
+            <div class="md:flex items-center justify-center hidden sm:block gap-4">
               <div><img src="c1-assets/dog-cartoon.png" alt=""></div>
               <div>
                 <div class="flex gap-2 items-center">
@@ -346,9 +356,9 @@
        <!-- Everyday low Price -->
        <section class="relative">
         <h2 class="text-4xl font-normal my-6">Everyday low Price</h2>
-        <div class="flex gap-10">
+        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-10">
           <!-- 1st div in everyday law price -->
-          <div class="flex rounded-xl bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] ...">
+          <div class="flex rounded-xl bg-gradient-to-r gap-4 from-[#F8CCFB] to-[#ACD2FD] ...">
             <div class="px-20 py-36">
               <h5 class="text-xl">Under Price</h5>
               <h4 class="text-3xl">Pet Grooming Mitt</h4>
@@ -377,7 +387,7 @@
     <footer class="relative mt-96">
        <!-- Hero Section -->
        <section class="">
-        <div class="absolute flex items-center left-1/2 bottom-2/3 transform -translate-x-1/2 
+        <div class="absolute grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 items-center left-1/2 bottom-2/3 transform -translate-x-1/2 
         w-10/12 bg-white p-6 rounded-lg z-10">
           <!-- image -->
            <div>
@@ -393,9 +403,9 @@
         </div>
         
       </section>
-      <div class="flex justify-around bg-[#FFDC26] md:pt-80 md:pb-36">
+      <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 justify-around bg-[#FFDC26] md:pt-80 md:pb-36">
         <!-- left footer -->
-        <div class="">
+        <div class=" mx-36">
           <div>
             <img src="c1-assets/logo-footer.png" alt="">
             <h4>Browse4Pets</h4>
@@ -403,7 +413,7 @@
           <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
         </div>
         <!-- center footer -->
-         <div>
+         <div class="mx-36">
           <ul>
             <li>Find a pet</li>
             <li>Breeds</li>
@@ -411,7 +421,7 @@
            </ul>
          </div>
          <!-- right footer -->
-          <div>
+          <div class="mx-36">
            <div>
             <h5>Follow Us</h5>
            </div>
