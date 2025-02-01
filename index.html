@@ -44,7 +44,7 @@
                 <!-- nav end -->
                 <div class="navbar-end">
                     <!-- bell icon -->
-                     <div class="md:flex items-center hidden md:block">
+                     <div class="md:flex items-center gap-3 hidden md:block">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
                           </svg>
@@ -81,7 +81,7 @@
           </div>
         </div>
     </header>
-    <main>
+    <main class="relative">
       <!-- Browse By Categories -->
       <section>
          <div class="md:mx-10 md:my-10 md:justify-around">
@@ -344,35 +344,94 @@
         </div>
        </section>
        <!-- Everyday low Price -->
-       <section>
+       <section class="relative">
         <h2 class="text-4xl font-normal mx-6 my-6">Everyday low Price</h2>
-        <div class="flex px-6 gap-5">
+        <div class="flex md:mx-36 gap-10">
           <!-- 1st div in everyday law price -->
-          <div class="flex-1 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] ...">
-            <div>
-              <h5>Under Price</h5>
-              <h4>Pet Grooming Mitt</h4>
-              <h5>(Easy Hair Removal)</h5>
-              <h3>$7.99</h3>
+          <div class="flex rounded-xl bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] ...">
+            <div class="px-20 py-36">
+              <h5 class="text-xl">Under Price</h5>
+              <h4 class="text-3xl">Pet Grooming Mitt</h4>
+              <h5 class="text-2xl text-white">(Easy Hair Removal)</h5>
+              <h3 class="text-6xl">$7.99</h3>
             </div>
-            <div> <img src="c1-assets/cute-dog-mid.png" alt=""></div>
+            <div> <img class="" src="c1-assets/cute-dog-mid.png" alt=""></div>
 
           </div>
           <!-- 2nd div in everyday law price -->
-          <div class="flex-1 bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] ...">
-            <div>
-              <h3>T-Shirt for Dogs</h3>
-              <h2>$7.99</h2>
+          <div class="flex rounded-xl  bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] ...">
+            <div class="p-12">
+              <h3 class="text-3xl">T-Shirt for Dogs</h3>
+              <h2 class="text-6xl text-[#FFDC26]">$7.99</h2>
             </div>
-            <div> <img src="c1-assets/cute-pet-mid.png" alt=""></div>
+            <div> <img class="pt-20" src="c1-assets/cute-pet-mid.png" alt=""></div>
 
           </div>
         </div>
 
        </section>
 
+      
     </main>
-    <footer>
+    <!-- footer -->
+    <footer class="relative mt-96">
+       <!-- Hero Section -->
+       <section class="">
+        <div class="absolute flex items-center left-1/2 bottom-2/3 transform -translate-x-1/2 
+        w-10/12 bg-white p-6 rounded-lg z-10">
+          <!-- image -->
+           <div>
+            <img src="c1-assets/cute-pet-mid.png" alt="">
+           </div>
+           <div class="">
+            <h2 class="text-4xl">Get Pawsome News!</h2>
+            <h5 class="text-xl mt-3 mb-3">Exclusive training tips, ticks, product deals and more.</h5>
+            <input type="email" placeholder="Enter email...." class="input input-bordered" required /> <br>
+            <button class="mt-4 rounded-lg px-8 py-3 bg-[#FFDC26] text-white">Subscribe</button>
+
+           </div>
+        </div>
+        
+      </section>
+      <div class="flex justify-around bg-[#FFDC26] md:pt-80 md:pb-36">
+        <!-- left footer -->
+        <div class="">
+          <div>
+            <img src="c1-assets/logo-footer.png" alt="">
+            <h4>Browse4Pets</h4>
+          </div>
+          <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+        </div>
+        <!-- center footer -->
+         <div>
+          <ul>
+            <li>Find a pet</li>
+            <li>Breeds</li>
+            <li>Contact us</li>
+           </ul>
+         </div>
+         <!-- right footer -->
+          <div>
+           <div>
+            <h5>Follow Us</h5>
+           </div>
+            <div class="flex size-20">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                <path d="M11.666,2.005C6.62,2.17,2.374,6.251,2.025,11.288c-0.369,5.329,3.442,9.832,8.481,10.589V14.65H8.892 c-0.726,0-1.314-0.588-1.314-1.314v0c0-0.726,0.588-1.314,1.314-1.314h1.613v-1.749c0-2.896,1.411-4.167,3.818-4.167 c0.357,0,0.662,0.008,0.921,0.021c0.636,0.031,1.129,0.561,1.129,1.198v0c0,0.663-0.537,1.2-1.2,1.2h-0.442 c-1.022,0-1.379,0.969-1.379,2.061v1.437h1.87c0.591,0,1.043,0.527,0.953,1.111l-0.108,0.701c-0.073,0.47-0.477,0.817-0.953,0.817 h-1.762v7.247C18.235,21.236,22,17.062,22,12C22,6.366,17.341,1.821,11.666,2.005z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 26 26">
+              <path d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z"></path>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                  <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path>
+              </svg>
+            </div>
+          </div>
+
+      </div>
 
     </footer>
     
